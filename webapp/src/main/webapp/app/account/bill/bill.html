@@ -1,0 +1,16 @@
+<div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>Your Bills</h1>
+
+            <div class="alert alert-success" ng-repeat="bill in vm.bills">
+                ID: {{bill.id}}; Quality: {{bill.quality}}; Date of last access: {{bill.date | date:'dd-MM-yyyy HH:mm'}}
+            </div>
+
+            <div class="alert alert-danger" ng-if="vm.bills.length === 0">
+                No bills to show.
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div ng-cloak>
+    <div class="row">
+        <div class="col-md-8" ng-repeat="sensor in vm.data">
+            <div class="alert alert-warning">
+                {{sensor.id}}, from {{sensor.date | date:'dd-MM-yyyy HH:mm'}} with a quality of {{sensor.quality}}<br/>
+                <a class="alert-link" ui-sref="ecg-archive.detail({dataId: sensor.id})">&ltOpen Viewer></a> <a class="alert-link" ng-click="vm.download(sensor.id)">&ltDownload></a>
+            </div>
+        </div>
+        <a id="downloadAnchorElem" style="display:none"></a>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div ng-cloak>
+    <div class="row">
+        <div class="col-md-8" style="width: 100%">
+            Showing data from {{vm.data.secondLeft}}s to {{vm.data.secondRight}}s of a complete length of
+            {{vm.data.seconds}}s from {{vm.data.date | date:'dd-MM-yyyy'}}.
+            <div style="color: #1F811F">Quality: {{vm.data.quality}}</div>
+            <div style="color: #942a25" ng-if="vm.canvas.not_recorded.length !== 0">Second(s) <span
+                ng-repeat="not_rec in vm.canvas.not_recorded">{{not_rec}} </span> missing in the recording.
+            </div>
+            <div style="color: #1F811F" ng-if="vm.canvas.not_recorded.length === 0">Shown Record is complete.</div>
+            <canvas id="ECGCanvas" class="chart chart-line" chart-data="vm.canvas.data"
+                    chart-labels="vm.canvas.labels" chart-series="vm.series" chart-options="vm.options"
+                    chart-dataset-override="vm.datasetOverride" chart-click="onClick">
+            </canvas>
+            <div class="row-md-8">
+                <button ng-click="vm.decrement()">
+                    Decrement
+                </button>
+                <button ng-click="vm.increment()">
+                    Increment
+                </button>
+                <button ng-click="vm.reset()">
+                    Reset
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>

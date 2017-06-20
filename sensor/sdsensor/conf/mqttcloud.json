@@ -1,0 +1,12 @@
+
+	 {
+		"username": "example",
+		"password": "example",
+		"virtualHost": "example",
+		"hostname": "puma.rmq.cloudamqp.com",
+		"port": 5672,
+		"exchangeName": "ecg_data_exchange_direct",
+		"queueName": "ecg_data_cluster",
+		"queueNameWebapp": "ecg_data_webapp",
+		"routingKey": "ecg_data_route"
+	}

@@ -1,0 +1,1 @@
+java -cp "./*" at.ac.tuwien.dsg.sensor.SimpleCommandLineGenericSensor mqttcloud.json data_2.csv

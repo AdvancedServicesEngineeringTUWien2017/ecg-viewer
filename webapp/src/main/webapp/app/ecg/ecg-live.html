@@ -1,0 +1,13 @@
+<div ng-cloak>
+    <div class="row">
+        <div class="col-md-8" ng-repeat="(id,sensor) in vm.sensors">
+            <div class="alert alert-warning">
+                Id of Sensor: {{id}}, Heart-Rate: {{sensor.heartRate}}
+            </div>
+            <canvas id="line{{$index}}" class="chart chart-line" chart-data="sensor.data"
+                    chart-labels="sensor.labels" chart-series="vm.series" chart-options="vm.options"
+                    chart-dataset-override="vm.datasetOverride" chart-click="onClick">
+            </canvas>
+        </div>
+    </div>
+</div>
