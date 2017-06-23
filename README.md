@@ -27,7 +27,7 @@ To build the individual Components, please refer to the readmes in the subfolder
 
 The Webapp runs on a AWS t2.micro instance using docker. And can be accessd via:
 
-	http://ec2-54-93-59-85.eu-central-1.compute.amazonaws.com:8080/
+	http://ec2-52-59-191-30.eu-central-1.compute.amazonaws.com:8080/
 
 Run the Service on the AWS instance:
 - Create AWS t2.micro instance
@@ -41,7 +41,7 @@ Run the Service on the AWS instance:
 ### Flink Stream
 The Flink dashboard of the stream runs on a AWS t2.large instance using a one node cluster. The dashboard can be accessed via:
     
-    http://ec2-54-93-72-22.eu-central-1.compute.amazonaws.com:8081/
+    http://ec2-54-93-241-198.eu-central-1.compute.amazonaws.com:8081/
 
 Run the Service on the AWS instance:
 - Create AWS t2.large instance
